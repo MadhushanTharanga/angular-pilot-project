@@ -1,11 +1,23 @@
-<button (click)="load()">Load All Data</button>
+<button (click)="load()">load all data</button>
+<hr>
 <h1>Comments</h1>
-<table>
+<table class="table table-hover">
   <thead>
-    <tr>Post Id</tr>
-    <tr>Id</tr>
-    <tr>Name</tr>
-    <tr>Email</tr>
-    <tr>body</tr>
+  <tr>
+    <th>post_id</th>
+    <th>id</th>
+    <th>name</th>
+    <th>email</th>
+    <th>body</th>
+  </tr>
   </thead>
+  <tbody>
+    <tr *ngFor="let temComment of comments">
+      <td>{{temComment?.postId}}</td>
+      <td>{{temComment?.id}}</td>
+      <td>{{temComment?.name}}</td>
+      <td>{{temComment?.email}}</td>
+      <td>{{temComment?.body}}</td>
+    </tr>
+  </tbody>
 </table>
