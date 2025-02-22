@@ -1,0 +1,17 @@
+ul{
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+}
+a{
+  background-color: #06adad;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+
+}
+.active{
+  background-color: gold!important;
+  color: black;
+}

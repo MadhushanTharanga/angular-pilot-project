@@ -1,12 +1,6 @@
-<button class="btn btn-info" (click)="load()">LOAD ALL DATA</button> |
-<button class="btn btn-warning" >ACCESS DASHBOARD</button>
-<hr>
 <h1>Comments</h1>
+<button class="btn btn-info" (click)="load()">LOAD ALL DATA</button>
 <hr>
-<div>
-  <label for="idSearch">search</label>
-  <input type="search" id="idSearch" [formControl]="searchText" placeholder="search here">
-</div>
 <table class="table table-hover">
   <thead>
   <tr>
@@ -27,3 +21,4 @@
     </tr>
   </tbody>
 </table>
+<router-outlet/>

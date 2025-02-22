@@ -5,11 +5,12 @@ import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import {debounceTime} from "rxjs";
+import {RouterLink, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, ReactiveFormsModule],
+  imports: [CommonModule, HttpClientModule, ReactiveFormsModule, RouterLink, RouterOutlet],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
