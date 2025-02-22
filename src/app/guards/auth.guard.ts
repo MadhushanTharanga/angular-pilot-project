@@ -9,7 +9,7 @@ export const authGuard: CanActivateFn = (route, state) => {
     return true;
   }else {
     router.navigateByUrl('login')
-    alert('Please login for access dashboard!');
+    alert('Please login for access dashboard!c ');
     return false;
   }
 };
