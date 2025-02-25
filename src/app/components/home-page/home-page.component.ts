@@ -19,9 +19,7 @@ export class HomePageComponent implements OnInit{
   comments : any[]=[];
   constructor(private _service:CommentsService) {
   }
-  load(){
-    this.loadAllData();
-  }
+
   loadAllData(){
     this._service.findAllComments().subscribe(response=>{
       this.comments=response;
@@ -30,10 +28,8 @@ export class HomePageComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.searchText.valueChanges.pipe(
-      debounceTime(500)
-    ).subscribe(value=>{
-      console.log(`[${value}]`)
-    })
+    this.loadAllData();
   }
+
+
 }

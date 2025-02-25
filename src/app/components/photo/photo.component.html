@@ -1,0 +1,22 @@
+<h1>PHOTOS</h1>
+<hr>
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>albumId</th>
+    <th>id</th>
+    <th>title</th>
+    <th>url</th>
+    <th>thumbnailUrl</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let temPhotos of photos">
+    <td>{{temPhotos?.albumId}}</td>
+    <td>{{temPhotos?.id}}</td>
+    <td>{{temPhotos?.title}}</td>
+    <td>{{temPhotos?.url}}</td>
+    <td>{{temPhotos?.thumbnailUrl}}</td>
+  </tr>
+  </tbody>
+</table>
